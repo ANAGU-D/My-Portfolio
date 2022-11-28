@@ -1,0 +1,25 @@
+.nav-bar-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: row;  
+    font-weight: 500;
+    margin-left: 5%;
+    margin-top: 5%;
+    position: fixed;
+   top: -2%;
+  }
+  
+  a{
+    color: rgb(185, 179, 179);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  nav li{
+   display: inline;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 14px 16px;  
+  }

@@ -1,0 +1,126 @@
+.body{
+    width: 100%;
+    height: 100%;
+    margin-left: 6%;
+    margin-top: 11%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+span{
+    color: #5CB8E4;
+}
+.body-left{
+    width: 50%;  
+}
+.About h1{
+    font-size: large;
+    margin-top: 3%;
+    width: 55%;
+    font-family: 'Offside';  
+}
+.Name h1{
+    margin-top: 3%;
+    font-family: 'Offside';
+}
+button{
+    padding: 14px 10px;
+    background-color: var(--span-button);
+    width: 50%;
+    margin-top: 5%;
+    cursor: pointer;
+    border: var(--span-button) solid 1px ;
+    color: white;
+    font-family: 'Offside';
+}
+.hidden{
+    color: white;
+    font-weight: 200;
+    font-size: medium;
+    display: none;
+}
+.social-media{
+    display: inline-flex;
+}
+.social-media .icon{
+    margin: 0 20px;
+    margin-right: 20%;
+    margin-left: 3%;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+.social-media .icon span{
+    height: 50px;
+    width: 50px;
+    display: block;
+    background: var(--span-button);
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    
+}
+.social-media span{
+    color: var(--primary-color);
+}
+.social-media .icon span i{
+    font-size: 25px;
+    line-height: 50px;
+}
+.social-media .icon .tooltip{
+   
+        position: absolute;
+        top: 0px;
+        background:var(--span-button);
+        font-size: 12px;
+        padding: 5px 7px;
+        border-radius: 25px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        font-family: 'Offside';
+}
+.social-media .icon:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    top: -40px;
+    border: black solid 1px;
+}
+.social-media .icon:hover .span,
+.social-media .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.social-media .icon .tooltip::before{
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px;
+    background:var(--span-button);
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+.coffee{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    
+}
+.coffee h1{
+    font-size: medium;
+    padding-top: 2%;
+}
+.body-right{
+    width: 70%;
+    margin-left: 58%;
+    margin-top: -9%;
+    margin-bottom: 3%;
+    height: auto;
+    color: white;
+}

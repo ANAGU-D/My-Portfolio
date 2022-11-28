@@ -1,0 +1,77 @@
+.modal-container{
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    width: 40%;
+    background-color: white;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 29%;
+    padding: 34px 24px;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    box-shadow: #2f3246 5px 5px 5px 5px ;
+    position: fixed;
+}
+.overlay{
+    background-color: rgba(8, 8, 59, 0.9);
+    position:fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    backdrop-filter: blur(3px)
+}
+.inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border-right: #2f3246 solid 1px;
+    border-left: #2f3246 solid 1px;
+    border-bottom-style: dashed;
+    border-bottom: #2f3246 solid 1px;
+    border-top: #2f3246 solid 1px ;
+   
+}
+
+.right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    margin-right: 8%;
+}
+.left{
+    display: flex;
+    width: 50%;
+}
+
+.left h1{
+    
+    font-weight: 700;
+    font-size: 21px;
+    padding-left: 10%;
+    padding-top: 5%
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.left p{
+    align-items: flex-start;
+    padding-top: 4%;
+    
+}
+.left h3{
+    padding-top: 5%;
+}
+.left button{
+    padding: 9px;
+   position: absolute;
+  width: 30%;
+  margin-top: 2%;
+  cursor: pointer;
+}
